@@ -43,7 +43,7 @@ const TodoItem = ({ text, id }) => {
             </TouchableOpacity>
             <View style={styles.buttonSpacer} />
             <TouchableOpacity onPress={handleDelete}>
-              <FontAwesome5 name="trash-alt" size={24} color="#d32f2f" />
+              <FontAwesome5 name="trash-alt" size={24} color="#004927" />
             </TouchableOpacity>
           </View>
         </View>

@@ -10,12 +10,12 @@ const Drawer = createDrawerNavigator();
 const CustomDrawerContent = (props) => (
   <DrawerContentScrollView {...props}>
     <View style={styles.drawerHeader}>
-      <Image source={require('./assets/Wynn.jpg')} style={styles.drawerImage} />
-      <Text style={styles.mahName}>Wyne Khristian B. Ipanag</Text>
+      <Image source={require('./assets/rangillas.png')} style={styles.drawerImage} />
+      <Text style={styles.mahName}>Andrion Clemence P. Rangillas</Text>
       <Text style={styles.sectionCode}>IT73-IT35B</Text>
       <Text style={styles.courseName}>Bachelor of Science in Information Technology</Text>
-      <Text style={styles.courseDesc}>Kaundangon nako!!!!</Text>
-      <Text style={styles.studId}>20211433</Text>
+      <Text style={styles.courseDesc}>Gwapo Gyapon bahalag kaymukat</Text>
+      <Text style={styles.studId}>20201428</Text>
     </View>
     <DrawerItemList {...props} />
   </DrawerContentScrollView>
@@ -25,7 +25,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Drawer.Navigator initialRouteName="TodoList" drawerContent={(props) => <CustomDrawerContent {...props} />}>
-        <Drawer.Screen name="TodoList" component={TodoList} options={{ title: "Wyn's Tododo" }} />
+        <Drawer.Screen name="TodoList" component={TodoList} options={{ title: "Rangillas ToDo List" }} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
@@ -33,7 +33,7 @@ const App = () => {
 
 const styles = StyleSheet.create({
   drawerHeader: {
-    backgroundColor: '#fb9062',
+    backgroundColor: '#FFC300',
     paddingVertical: 20,
     paddingHorizontal: 10,
     alignItems: 'center',
@@ -41,27 +41,27 @@ const styles = StyleSheet.create({
   mahName: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#FFFFFF',
+    color: '#000000',
     marginBottom: 10,
   },
   sectionCode: {
     fontSize: 16,
-    color: '#FFFFFF',
+    color: '#000000',
     marginBottom: 5,
   },
   courseName: {
     fontSize: 14,
-    color: '#FFFFFF',
+    color: '#000000',
     marginBottom: 5,
   },
   courseDesc: {
     fontSize: 14,
-    color: '#FFFFFF',
+    color: '#000000',
     marginBottom: 5,
   },
   studId: {
     fontSize: 14,
-    color: '#FFFFFF',
+    color: '#000000',
   },
   drawerImage: {
     width: 150,
